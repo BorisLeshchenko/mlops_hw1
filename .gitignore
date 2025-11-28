@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+.venv/
+venv/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# MLflow
+mlruns/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# DVC (артефакты управляются .gitignore в подпапках)
+# dvc.lock уже в Git!
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project
+data/raw/*.csv
+!data/raw/*.dvc
