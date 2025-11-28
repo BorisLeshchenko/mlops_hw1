@@ -3,30 +3,30 @@
 Проект демонстрирует создание воспроизводимого ML пайплайна с использованием DVC для контроля версий данных, MLflow для логирования экспериментов и Git для версионирования кода.
 
 ## Структура проекта
-mlops_hw1/
-├── data/
-│ ├── raw/ # Сырые данные (управляются DVC)
-│ │ ├── iris.csv # Iris dataset (локально)
-│ │ └── iris.csv.dvc # Метаданные DVC
-│ └── processed/ # Обработанные данные (генерируются при dvc repro)
-│ ├── X_train.pkl
-│ ├── X_test.pkl
-│ ├── y_train.pkl
-│ ├── y_test.pkl
-│ └── .gitignore # Игнорирует артефакты DVC
-├── src/
-│ ├── prepare.py # Подготовка данных: split train/test
-│ └── train.py # Обучение модели с логированием MLflow
-├── models/
-│ ├── model.pkl # Обученная модель (генерируется при dvc repro)
-│ └── .gitignore # Игнорирует артефакты DVC
-├── .dvcignore # Конфиг DVC (какие файлы не версионировать)
-├── .gitignore # Глобальные правила игнорирования (Python, MLflow и т.д.)
-├── dvc.yaml # Определение DVC пайплайна (стадии prepare и train)
-├── dvc.lock # Хэши зависимостей (сгенерирован автоматически)
-├── params.yaml # Гиперпараметры пайплайна
-├── requirements.txt # Python зависимости
-└── README.md # Этот файл
+mlops_hw1/  
+├── data/  
+│ ├── raw/ # Сырые данные (управляются DVC)  
+│ │ ├── iris.csv # Iris dataset (локально)  
+│ │ └── iris.csv.dvc # Метаданные DVC  
+│ └── processed/ # Обработанные данные (генерируются при dvc repro)  
+│ ├── X_train.pkl  
+│ ├── X_test.pkl  
+│ ├── y_train.pkl  
+│ ├── y_test.pkl  
+│ └── .gitignore # Игнорирует артефакты DVC  
+├── src/  
+│ ├── prepare.py # Подготовка данных: split train/test  
+│ └── train.py # Обучение модели с логированием MLflow  
+├── models/  
+│ ├── model.pkl # Обученная модель (генерируется при dvc repro)  
+│ └── .gitignore # Игнорирует артефакты DVC  
+├── .dvcignore # Конфиг DVC (какие файлы не версионировать)  
+├── .gitignore # Глобальные правила игнорирования (Python, MLflow и т.д.)  
+├── dvc.yaml # Определение DVC пайплайна (стадии prepare и train)  
+├── dvc.lock # Хэши зависимостей (сгенерирован автоматически)  
+├── params.yaml # Гиперпараметры пайплайна  
+├── requirements.txt # Python зависимости  
+└── README.md # Этот файл  
 
 ## Быстрый старт
 
