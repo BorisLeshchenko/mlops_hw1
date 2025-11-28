@@ -1,0 +1,9 @@
+# Гиперпараметры для воспроизводимости
+prepare:
+  split_ratio: 0.8
+  random_state: 42
+
+train:
+  model: "LogisticRegression"
+  random_state: 42
+  max_iter: 200
