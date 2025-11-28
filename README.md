@@ -67,4 +67,3 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db
 - **Параметры:** model, random_state, max_iter, split_ratio
 - **Метрики:** accuracy
 - **Артефакты:** model.pkl, confusion_matrix.png
-![alt text](image.png)
